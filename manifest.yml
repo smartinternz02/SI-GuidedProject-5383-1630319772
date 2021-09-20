@@ -1,0 +1,9 @@
+---
+applications:
+
+ - name: Python Flask App AES
+   host : Python Flask App AES 
+   random-route: true
+   memory: 512M
+   disk_quote: 1.5G
+   buil
