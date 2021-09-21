@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Automated Essay Grading System</title>
+
+	<!-- Linking css -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div class="header" style="padding: 18px;">
+		<h1>Automated Essay-grading System</h1>
+		<div class="links">
+			<a href="#home">Home</a>
+			<a href="#prompts">Prompts</a>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="question" style="width: 40%;">
+			<div style="padding-left: 30px; float:left; width:100%; height:80%;">
+				<font size="5"><b>Question</b></font>
+				<br>
+				<div
+					style="width:80%; height:100%; font-size:20px;font-family:Montserrat; padding:20px; text-align:justify; border:3px solid #ddd; border-radius:6px; word-wrap: break-word; overflow: auto;">
+					{{question}}
+				</div>
+			</div>
+		</div>
+
+		<div class="formInput">
+			<form action="{{ url_for('grade') }}" method="POST" style="width:50%;">
+				<font size="5"><b>Submission</b></font>
+				<textarea type="text" name="essay" id="essay" class="sub" placeholder="Enter your essay..."></textarea>
+				<br>
+				<br>
+			<center><button type="submit" class="btn">Grade me</button></center>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

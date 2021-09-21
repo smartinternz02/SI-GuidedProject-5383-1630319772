@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Automated Essay-grading System</title>
+
+  <!-- Linking Bootstrap files -->
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Linking the css stylesheet -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="header">
+    <h1>Automated Essay-grading System</h1>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#prompts">Prompts</a>
+    </div>
+  </div>
+    
+  <!-- Home page -->
+  <div id="home">
+    <div class="intro">
+      <h1>Write like it matters and it will.</h1>
+      <div class="quote">
+        <p>Write something that's worth fighting over.</p> 
+        <p>Because that's how you change things.</p> 
+        <p>That's how you create art. </p>
+      </div>
+      <a href="#prompts"><button type="submit" class="btn">Choose</button></a>
+    </div>
+
+    <div class="carouselPanel">
+      <!-- Carousel with movie pictures -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 posters" src="/static/css/images/essay.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 posters" src="/static/css/images/submit.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 posters" src="/static/css/images/writing.png" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <center>
+    <hr color="#10205f" width="80%">
+  </center>
+
+  <!-- Prompts section -->
+  <div id="prompts" name="prompts">
+    <h1>Almost all good writing begins with terrible first efforts. </h1>
+      <h2>You need to start somewhere. </h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="/static/css/images/computers.png" alt="">
+        <a href="http://localhost:5000/question/1" style="text-decoration:none;">More and more people use
+          computers, but not everyone agrees that this benefits . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css//images/books.png" alt="">
+        <a href="http://localhost:5000/question/2" style="text-decoration:none; ">All of us can think of a
+          book that we hope none of our children or any other children have . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/candy.png" alt="">
+        <a href="http://localhost:5000/question/3" style="text-decoration:none;">FORGET THAT OLD SAYING
+          ABOUT NEVER taking candy from strangers. No, a better . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/Saeng.png" alt="">
+        <a href="http://localhost:5000/question/4" style="text-decoration:none; color:black;">Saeng, a teenage girl, and
+          her family have moved to the United States from Vietnam. As Saeng . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/parents.png" alt="">
+        <a href="http://localhost:5000/question/5" style="text-decoration:none; color:black;">My parents, originally
+          from Cuba, arrived in the United States in 1956. After living for . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/building.png" alt="">
+        <a href="http://localhost:5000/question/6" style="text-decoration:none; color:black;">When the Empire State
+          Building was conceived, it was planned as the world’s tallest building . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/patience.png" alt="">
+        <a href="http://localhost:5000/question/7" style="text-decoration:none; color:black;">Write about patience.
+          Being patient means that you are understanding and tolerant. A patient . . .</a>
+      </div>
+      <div class="card">
+        <img src="/static/css/images/laughing.png" alt="">
+        <a href="http://localhost:5000/question/8" style="text-decoration:none; color:black;">We all understand the
+          benefits of laughter. For example, someone once said, Laughter is the . . .</a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    Team importName &copy; Copyright 2021  
+  </footer>
+  <script src="static/js/index.js"></script>
+</body>
+
+</html>
